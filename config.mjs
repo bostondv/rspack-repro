@@ -20,8 +20,11 @@ const config = {
   entry: {
     main: "./src/index",
   },
-  plugins: [new HtmlWebpackPlugin(), new rspack.HotModuleReplacementPlugin(),
-    new ReactRefreshPlugin(),],
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new rspack.HotModuleReplacementPlugin(),
+    new ReactRefreshPlugin(),
+  ],
   optimization: {
     minimize: false,
     mergeDuplicateChunks: false,
@@ -87,6 +90,7 @@ const config = {
                     cssPropOptimization: true,
                   },
                 ],
+                'react-refresh/babel'
               ],
               assumptions: {
                 privateFieldsAsProperties: true,

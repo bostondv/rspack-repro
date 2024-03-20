@@ -6,7 +6,7 @@ export default function Page() {
     <div>
       <br />
       <button onClick={() => setCount(count + 1)}>Lazy Count: {count}</button>
-      <p>This is a lazy component.</p>
+      <p>This is a lazy component</p>
     </div>
   )
 }
